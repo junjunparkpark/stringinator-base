@@ -69,7 +69,7 @@ const reduce = function(obj, callback=identity, initialValue) {
   let initializing = accumulator === undefined;
   each(obj, (currentValue, currentIndexOrKey, iteratedObj) => {
     if (initializing) {
-      intiializing = false;
+      initializing = false;
       accumulator = currentValue;
     } else {
       accumulator = callback(accumulator, currentValue, currentIndexOrKey, iteratedObj);
